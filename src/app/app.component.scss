@@ -1,3 +1,30 @@
+h1{
+    color: blue;
+    font-size: 40px;
+}
+
+.noActivity{
+    color: darkred;
+}
+.todoItem{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#newTodo{
+    height: 25px;
+    border: thin solid darkblue;
+    color: darkslateblue;
+    border-radius: 5px;
+    box-shadow: inset;
+}
+
+button{
+    border: groove;
+    margin: 10px 10px 10px 0px;
+    padding: 5px 10px;
+    background-color:chartreuse;
+}
 .checked{
     text-decoration: line-through;
     color: red;
