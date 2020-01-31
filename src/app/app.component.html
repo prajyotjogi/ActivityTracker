@@ -1,16 +1,19 @@
-<h1>My Activity Tracker</h1>
-
-<div>
+<div class="jumbotron">
+    <div class="contain">
+    <h1>My Activity Tracker</h1>
     <div *ngFor="let todo of todos; let i=index" [ngClass]="{'todoItem':true}">
         <input type="checkbox" [(ngModel)]="todo.done" />
         <span [ngClass]="{'checked': todo.done}">{{i+1}}. {{ todo.desc }}</span>
     </div>
-    <span *ngIf="todos.length == 0" [ngClass]="{'noActivity':true}">No Activities to track! Start by adding one</span><br/><br/>
-    <input id="newTodo" type="text" [(ngModel)]="newToDo">
+    <span *ngIf="todos.length == 0" [ngClass]="{'noActivity':true}" >No Activities to track! Start by adding one</span><br/><br/>
+    <div>
+        <input id="newTodo" type="text" [(ngModel)]="newToDo">
+    </div>
     <span *ngIf="error" style="color:red;">Please enter an activity!</span>
     <br/>
-    <button id="addActivity" (click)="addMore()">Add an Activity!</button>
-    <button id="clearAll" (click)="clearAll()">Clear All</button>
+    <button id="addActivity" (click)="addMore()" class="btn">Add an Activity!</button>
+    <button id="clearAll" (click)="clearAll()" class="btn">Clear All</button>
+    </div>
 </div>
 
 
