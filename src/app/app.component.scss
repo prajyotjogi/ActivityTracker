@@ -9,6 +9,7 @@ h1{
 .todoItem{
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 #newTodo{
@@ -23,11 +24,20 @@ button{
     border: groove;
     margin: 10px 10px 10px 0px;
     padding: 5px 10px;
+    border-radius: 10%;
     background-color:chartreuse;
+    transition: transform 0.2s;
+}
+button:hover{
+    background-color: rgb(190, 190, 240);
+    
+    transform: scaleX(1.2) scaleY(1.2);
+
 }
 .checked{
     text-decoration: line-through;
     color: red;
+    ;
 }
 
 input {
@@ -50,6 +60,12 @@ input {
   margin: auto;
   width: 50%;
   border: 3px solid #c3c3c3;
+  border-radius: 2%;
   padding: 45px;
   text-align: center;
+}
+
+.Myoverflow{
+    overflow-y: hidden;
+    
 }
